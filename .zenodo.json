@@ -1,0 +1,24 @@
+{
+  "title": "AI Agent Security Disclosure Index: October 2026 totals by category",
+  "upload_type": "dataset",
+  "version": "1.0",
+  "description": "Totals by category, October 2026 edition, of the security evidence and agent controls that the AI agent startups tracked by AIAgentSearch.ai state on their own public pages. Totals only; no company-level data is included. Method, sample and codebook are in README.md. Study page: https://aiagentsearch.ai/ai-agent-security-disclosure-index.html",
+  "creators": [
+    {
+      "name": "AIAgentSearch.ai Editorial Team"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "AI agents",
+    "AI agent security",
+    "security disclosure",
+    "dataset"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://aiagentsearch.ai/ai-agent-security-disclosure-index.html",
+      "relation": "isDocumentedBy"
+    }
+  ]
+}
