@@ -1,10 +1,10 @@
-# AI Agent Security Disclosure Index, October 2026: Totals by Category
+# AI Agent Security Disclosure Index, November 2026: Totals by Category
 
 Publisher: AIAgentSearch.ai (Agentic Solutions LLC)
 Author: AIAgentSearch.ai Editorial Team
-Data collected: October 20, 2026
-Published: October 21, 2026
-Edition: October 2026 (first edition; the index is re-read monthly on the same companies)
+Data collected: November 1, 2026 (first edition: October 20, 2026)
+Published: November 2, 2026 (first edition: October 21, 2026)
+Edition: November 2026 (second edition; the index is re-read monthly on the same companies). What changed since October is in `CHANGELOG.md`.
 Page: https://aiagentsearch.ai/ai-agent-security-disclosure-index.html
 License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
 
@@ -12,7 +12,9 @@ License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://cre
 
 | File | What it is |
 |---|---|
-| `Data_Study_02_Public_Totals_by_Category_2026-10-20.csv` | One row per category (20 rows) plus an "All" row: counts of companies read and of each measure below |
+| `Data_Study_02_Public_Totals_by_Category_2026-11-01.csv` | November 2026 edition. One row per category (20 rows) plus an "All" row: counts of companies read and of each measure below |
+| `Data_Study_02_Public_Totals_by_Category_2026-10-20.csv` | October 2026 edition, kept as first published |
+| `CHANGELOG.md` | What changed in each monthly edition |
 | `LICENSE` | The CC BY 4.0 licence notice for this repository |
 | `README.md` | This codebook |
 
@@ -24,13 +26,13 @@ The chart is on the study page linked above.
 
 **Sample.** 106 early-stage AI agent companies: the fixed panel of the AIAgentSearch.ai AI Agent Pricing Transparency Index, which is every company in the AIAgentSearch.ai candidate pool (our working list of AI agent companies sourced for coverage, compiled August to September 2026) except those our editors had already rejected as outside our 20 categories or not agent products. The pool was sourced mainly from startup accelerator rosters, funding coverage and category round-ups, so it leans toward early-stage companies. It is not a random sample of the AI agent market. Results describe the startups we track, not AI agent companies as a whole.
 
-**Collection.** On October 20, 2026 we read, for each company, its homepage or pricing page and the trust center, security and documentation pages those pages linked to. Pages were read with an AI-assisted page reader instructed to report only what each page states. Every value was recorded with the URL it came from. Nothing was estimated or filled in.
+**Collection.** On October 20, 2026 (first edition) we read, for each company, its homepage or pricing page and the trust center, security and documentation pages those pages linked to. Pages were read with an AI-assisted page reader instructed to report only what each page states. Every value was recorded with the URL it came from. Nothing was estimated or filled in. On November 1, 2026 we re-read every company from the pages recorded in October.
 
-**Readable companies.** 88 of the 106, across 19 of our 20 categories, the same 88 readable in the pricing index. Of the 18 not counted: 6 had changed product, 1 had been acquired, and 11 could not be read. None of the 18 is counted as "not stated". The Data Analysis and BI category has 0 readable companies this month.
+**Readable companies.** On November 1, 2026, 88 of the 106 (also 88 in October: one company left the readable set and one entered), across 19 of our 20 categories, the same 88 readable in the pricing index. Of the 18 not counted: 6 had changed product, 1 had been acquired, and 11 could not be read. None of the 18 is counted as "not stated". The Data Analysis and BI category has 0 readable companies this month.
 
-**Pages we could not read.** 15 of the 88 companies linked at least one page we could not read: 10 trust centers that load their content only by script, and 5 pages our reader could not fetch. Items on those pages are counted as not stated. Where a company's own security or pricing page already answered an item, we did not always open its separate trust center as well. Every count is therefore a floor.
+**Pages we could not read.** On November 1, 2026, 13 of the 88 companies linked at least one page we could not read: 11 trust centers that load their content only by script, and 2 pages our reader could not fetch (October: 15, of which 10 and 5). Items on those pages are counted as not stated. Where a company's own security or pricing page already answered an item, we did not always open its separate trust center as well. Every count is therefore a floor.
 
-## Codebook: `Data_Study_02_Public_Totals_by_Category_2026-10-20.csv`
+## Codebook: both monthly files (columns and definitions unchanged)
 
 Every count column counts companies among the `read_n` readable companies in that row. A company is counted once per column. An item is counted when it is stated on a page we read.
 
@@ -38,7 +40,7 @@ Every count column counts companies among the `read_n` readable companies in tha
 |---|---|---|
 | `category` | text | AIAgentSearch.ai category, or `All` for the total row |
 | `sampled_n` | integer | Companies sampled in the category (all statuses) |
-| `read_n` | integer | Companies readable on October 20, 2026 (the denominator for every other column) |
+| `read_n` | integer | Companies readable on the reading date in the file name (the denominator for every other column) |
 | `soc2_held` | integer | SOC 2 named in text or a labelled badge as held, completed, certified, attested or compliant, any type. "In progress" or "readiness" is not counted. A badge named only in an image file name, or labelled "AICPA SOC" without the number 2, is not counted |
 | `soc2_type2_stated` | integer | Of `soc2_held`, the page says Type II (or Type 2) |
 | `iso27001_held` | integer | ISO 27001 named as held, certified or compliant. "In progress" is not counted. ISO 42001 is not counted |
@@ -55,7 +57,9 @@ Every count column counts companies among the `read_n` readable companies in tha
 | `training_not_used_stated` | integer | Of `training_statement`, the company says plainly that customer data is not used to train models |
 | `soc2_report_on_request` | integer | The page says how a buyer can obtain the SOC 2 report (on request, under NDA or by request through a trust center). No company in the sample offered the report as an open download |
 
-Totals in the `All` row: read 88; SOC 2 held 41 (Type II stated 27); ISO 27001 held 5; trust center or security page 49; retention period stated 21; training statement 21 (of which 14 say customer data is not used); SSO or SAML 30; audit logs 22; human approval documented 23; penetration testing mentioned 10; HIPAA or BAA named 16; SOC 2 in progress 5; ISO 27001 in progress 4; SOC 2 report on request 9.
+Totals in the `All` row, November 1, 2026: read 88; SOC 2 held 43 (Type II stated 30); ISO 27001 held 5; trust center or security page 49; retention period stated 22; training statement 22 (of which 15 say customer data is not used); SSO or SAML 33; audit logs 24; human approval documented 25; penetration testing mentioned 11; HIPAA or BAA named 17; SOC 2 in progress 6; ISO 27001 in progress 4; SOC 2 report on request 9.
+
+October 20, 2026 totals: SOC 2 held 41 (Type II 27); retention 21; training statement 21 (14 not used); SSO or SAML 30; audit logs 22; human approval 23; penetration testing 10; HIPAA or BAA 16; SOC 2 in progress 5; the rest as November.
 
 **Reading small rows.** Eleven categories have fewer than five readable companies. A percentage on two or three companies would mislead; the published page groups them.
 
@@ -66,15 +70,15 @@ Company-level data is withheld to avoid singling out individual companies. A pub
 ## How to cite
 
 **APA (7th edition)**
-AIAgentSearch.ai Editorial Team. (2026, October 21). *Most AI Agent Startups We Track Do Not Name a SOC 2 Report*. AIAgentSearch.ai. https://aiagentsearch.ai/ai-agent-security-disclosure-index.html
+AIAgentSearch.ai Editorial Team. (2026, November 2). *Most AI Agent Startups We Track Do Not Name a SOC 2 Report*. AIAgentSearch.ai. https://aiagentsearch.ai/ai-agent-security-disclosure-index.html
 
 **MLA (9th edition)**
-AIAgentSearch.ai Editorial Team. "Most AI Agent Startups We Track Do Not Name a SOC 2 Report." *AIAgentSearch.ai*, 21 Oct. 2026, aiagentsearch.ai/ai-agent-security-disclosure-index.html.
+AIAgentSearch.ai Editorial Team. "Most AI Agent Startups We Track Do Not Name a SOC 2 Report." *AIAgentSearch.ai*, 2 Nov. 2026, aiagentsearch.ai/ai-agent-security-disclosure-index.html.
 
 **Citing the data files (APA 7, data set)**
-AIAgentSearch.ai Editorial Team. (2026). *AI Agent Security Disclosure Index: Totals by category, October 2026* [Data set]. AIAgentSearch.ai. https://aiagentsearch.ai/ai-agent-security-disclosure-index.html
+AIAgentSearch.ai Editorial Team. (2026). *AI Agent Security Disclosure Index: Totals by category, November 2026* [Data set]. AIAgentSearch.ai. https://aiagentsearch.ai/ai-agent-security-disclosure-index.html
 
-Under CC BY 4.0 you may share and adapt these files for any purpose, including commercially, if you credit "AIAgentSearch.ai, AI Agent Security Disclosure Index, October 2026" with a link to the page above and say whether you made changes.
+Under CC BY 4.0 you may share and adapt these files for any purpose, including commercially, if you credit "AIAgentSearch.ai, AI Agent Security Disclosure Index, November 2026" with a link to the page above and say whether you made changes.
 
 ## Independence
 
