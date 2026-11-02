@@ -1,0 +1,22 @@
+category,sampled_n,read_n,soc2_held,soc2_type2_stated,iso27001_held,trust_or_security_page,retention_period_stated,training_statement,sso_saml,audit_logs,human_approval_documented,pentest_mentioned,hipaa_or_baa_named,soc2_in_progress,iso27001_in_progress,training_not_used_stated,soc2_report_on_request
+AI Agent Builders & Frameworks,16,13,6,4,1,8,7,1,9,7,3,1,8,4,1,1,3
+Coding AI Agents,10,7,6,3,0,5,4,3,6,3,1,2,0,0,1,2,2
+Content Creation AI Agents,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+Customer Support AI Agents,9,8,4,3,1,5,1,2,2,4,1,3,3,0,0,1,2
+Data Analysis & BI AI Agents,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DevOps & SRE AI Agents,5,5,2,1,0,3,1,2,2,2,3,0,0,1,1,2,0
+Finance & Accounting AI Agents,6,4,4,4,1,3,1,4,2,2,2,2,0,0,1,4,0
+HR & Recruiting AI Agents,5,4,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Healthcare AI Agents,6,5,4,2,0,3,0,0,0,0,1,0,3,0,0,0,0
+IT & Operations AI Agents,10,8,3,3,0,3,2,3,1,0,3,1,0,1,0,1,1
+Image & Design AI Agents,2,2,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+Legal AI Agents,6,6,4,2,1,3,2,3,1,1,2,0,1,0,0,2,0
+Marketing AI Agents,4,4,2,2,0,2,0,0,1,1,2,0,0,0,0,0,1
+Meeting & Productivity AI Agents,2,2,1,1,0,1,0,1,0,0,0,0,1,0,0,1,0
+Research AI Agents,3,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0
+SEO & Content AI Agents,2,2,0,0,0,0,1,0,2,0,1,0,0,0,0,0,0
+Sales AI Agents,11,9,4,3,1,7,0,1,3,1,3,1,0,0,0,0,0
+Social Media AI Agents,3,3,2,1,0,1,1,1,0,1,2,1,0,0,0,1,0
+Video AI Agents,2,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+Voice AI Agents,2,2,1,1,0,1,2,1,1,0,0,0,1,0,0,0,0
+All,106,88,43,30,5,49,22,22,33,24,25,11,17,6,4,15,9
